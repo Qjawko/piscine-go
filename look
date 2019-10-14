@@ -1,1 +1,1 @@
-find \( -iname '[a]*[z]' -o -iname [z]*[a!] \)
+find \( -iname '[a]*' -o -iname '[z]*' -o -iname [z]*[a!] \)
