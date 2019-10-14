@@ -1,1 +1,1 @@
-ls -A -c --format=commas
+ls -A -c --format=commas | tr -d " "
