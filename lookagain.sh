@@ -1,1 +1,1 @@
-find -name "*.sh" -exec basename \{} .po \;
+find -name "*.sh" -exec basename \{}$ .sh \;
