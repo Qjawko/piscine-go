@@ -1,1 +1,1 @@
-ls -l | awk 'FNR/2'
+ls -l | oawk 'FNR%2 == 0'
