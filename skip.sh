@@ -1,1 +1,1 @@
-ls -l | sed -n '1!p'
+ls -l | awk 'FNR%2'
