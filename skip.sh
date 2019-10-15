@@ -1,1 +1,1 @@
-ls -l | oawk 'FNR%2 == 0'
+ls -l | oawk 'FNR%2 == 1'
