@@ -1,8 +1,10 @@
 package main
 
+import "github.com/01-edu/z01"
+
 func main() {
 	for i := 'a'; i <= 'z'; i++ {
-		print("%c", i)
+		z01.PrintRune(i)
 	}
-	print("\n")
+	z01.PrintRune('\n')
 }
