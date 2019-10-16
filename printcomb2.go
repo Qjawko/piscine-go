@@ -26,6 +26,9 @@ func PrintComb2() {
 
 					z01.PrintRune((rune)(j / 10))
 					z01.PrintRune((rune)(j % 10))
+
+					z01.PrintRune(',')
+					z01.PrintRune(' ')
 				}
 			}
 		}
