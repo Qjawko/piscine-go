@@ -1,10 +1,8 @@
 package main
 
-import "fmt"
-
 func main() {
 	for i := 'a'; i <= 'z'; i++ {
-		fmt.Printf("%c", i)
+		print("%c", i)
 	}
-	fmt.Printf("\n")
+	print("\n")
 }
