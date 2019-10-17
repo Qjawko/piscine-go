@@ -1,0 +1,13 @@
+### IntelliJ IDEA ###
+.idea
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
