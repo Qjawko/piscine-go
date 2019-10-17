@@ -1,13 +1,7 @@
-### IntelliJ IDEA ###
-.idea
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
+*.iml
+*.ipr
+*.iws
+.idea/
+/build/
 /dist/
-/nbdist/
-/.nb-gradle/
-build/
-
-### VS Code ###
-.vscode/
+/out/
