@@ -1,5 +1,9 @@
 package piscine
 
+import (
+	"github.com/01-edu/z01"
+)
+
 func Atoi(s string) int {
 	s0 := s
 	if s[0] == '-' || s[0] == '+' {
@@ -12,6 +16,7 @@ func Atoi(s string) int {
 	nm := 0
 
 	for _, ch := range s {
+		z01.PrintRune(ch)
 		if !containsIn0to9(ch) {
 			return 0
 		}
