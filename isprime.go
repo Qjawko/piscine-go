@@ -2,12 +2,12 @@ package piscine
 
 //https://en.wikipedia.org/wiki/Primality_test
 func IsPrime(n int) bool {
-	if n == 0 || n == 1 {
-		return false
+	if n <= 3 {
+		return true
 	}
 
 	if n%2 == 0 || n%3 == 0 {
-		return true
+		return false
 	}
 
 	i := 5
