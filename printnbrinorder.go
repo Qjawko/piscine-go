@@ -7,10 +7,6 @@ func PrintNbrInOrder(n int) {
 		z01.PrintRune('0')
 	}
 
-	if n > 2147483647 {
-		return
-	}
-
 	digits := IntToDigits(int32(n))
 	sortedDigits := SortIntegerTableInt32(digits)
 	PrintIntTable(sortedDigits)
