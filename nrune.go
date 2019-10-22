@@ -1,7 +1,7 @@
 package piscine
 
 func NRune(s string, n int) rune {
-	if n < 0 {
+	if n <= 0 {
 		return '\x00'
 	}
 
