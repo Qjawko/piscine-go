@@ -23,6 +23,20 @@ func IntToDigits(n int32) []int32 {
 	return digits
 }
 
+func SortIntegerTableInt32(table []int32) []int32 {
+	for i := 1; i < ArrLen(table); i++ {
+		key := table[i]
+		j := i - 1
+
+		for j >= 0 && table[j] > key {
+			table[j+1] = table[j]
+			j = j - 1
+		}
+		table[j+1] = key
+	}
+	return table
+}
+
 func PrintIntTable(digits []int32) {
 	for i := '0'; i <= '9'; i++ {
 		for _, digit := range digits {
