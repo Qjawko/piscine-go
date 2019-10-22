@@ -7,5 +7,5 @@ import (
 )
 
 func main() {
-	fmt.Println(piscine.Index("H&jGW$:Nz>$d\\", "G"))
+	fmt.Println(piscine.Capitalize("Hello! How are you? How+are+things+4you?"))
 }
