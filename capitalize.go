@@ -8,7 +8,7 @@ func Capitalize(s string) string {
 		runes[0] -= 32
 	}
 
-	for i := 1; i < length-1; i++ {
+	for i := 1; i < length; i++ {
 		if IsRuneUpperCase(runes[i]) {
 			if IsRuneUpperCase(runes[i-1]) ||
 				IsRuneLowerCase(runes[i-1]) ||
