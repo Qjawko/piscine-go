@@ -11,7 +11,6 @@ func PrintNbrInOrder(n int) {
 		return
 	}
 
-
 	digits := IntToDigits(int32(n))
 	sortedDigits := SortIntegerTableInt32(digits)
 	PrintIntTable(sortedDigits)
