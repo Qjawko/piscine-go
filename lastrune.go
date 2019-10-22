@@ -7,5 +7,5 @@ func LastRune(s string) rune {
 		return '\x00'
 	}
 
-	return []rune(s)[length]
+	return []rune(s)[length-1]
 }
