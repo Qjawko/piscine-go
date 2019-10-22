@@ -13,7 +13,7 @@ func NRune(s string, n int) rune {
 }
 
 func RuneLen(runes []rune) int {
-	count := 1
+	count := 0
 	for range runes {
 		count++
 	}
