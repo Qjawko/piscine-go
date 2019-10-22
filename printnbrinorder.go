@@ -40,7 +40,7 @@ func SortIntegerTableInt32(table []int32) []int32 {
 func PrintIntTable(digits []int32) {
 	for i := '0'; i <= '9'; i++ {
 		for _, digit := range digits {
-			if i == digit + 48 {
+			if i == digit+48 {
 				z01.PrintRune(i)
 			}
 		}
