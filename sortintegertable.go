@@ -1,7 +1,7 @@
 package piscine
 
 func SortIntegerTable(table []int) []int {
-	for i := 1; i < len(table); i++ {
+	for i := 1; i < ArrLen(table); i++ {
 		key := table[i]
 		j := i - 1
 
