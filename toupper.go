@@ -13,7 +13,7 @@ func ToUpper(s string) string {
 }
 
 func IsRuneLowerCase(r rune) bool {
-	for i := 'a'; i < 'z'; i++ {
+	for i := 'a'; i <= 'z'; i++ {
 		if r == i {
 			return true
 		}
