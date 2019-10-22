@@ -9,7 +9,7 @@ func Index(s string, toFind string) int {
 	case n == 0:
 		return 0
 	case n == 1:
-		return IndexRune(s, runes[n-1])
+		return IndexRune(s, runesToFind[0])
 	}
 
 	if RuneLen(runes) < RuneLen(runesToFind) {

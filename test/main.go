@@ -7,7 +7,5 @@ import (
 )
 
 func main() {
-	fmt.Println(piscine.Index("Heasdasdasdllo!", "l"))
-	fmt.Println(piscine.Index("Salut!", "alu"))
-	fmt.Println(piscine.Index("Ola!", "hOl"))
+	fmt.Println(piscine.Index("H&jGW$:Nz>$d\\", "G"))
 }
