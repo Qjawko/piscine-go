@@ -2,7 +2,7 @@ package piscine
 
 func NRune(s string, n int) rune {
 	if n > RuneLen([]rune(s)) {
-		return '0'
+		return '\x00'
 	}
 
 	return []rune(s)[n-1]
