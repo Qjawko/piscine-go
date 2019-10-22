@@ -7,7 +7,7 @@ func Index(s string, toFind string) int {
 
 	switch {
 	case n == 0:
-		return 1
+		return 0
 	case n == 1:
 		return IndexRune(s, []rune(s)[n])
 	}
