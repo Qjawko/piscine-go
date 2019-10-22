@@ -7,13 +7,21 @@ func PrintNbrInOrder(n int) {
 		z01.PrintRune('0')
 	}
 
-	digits := IntToDigits(int32(n))
-	sortedDigits := SortIntegerTableInt32(digits)
-	PrintIntTable(sortedDigits)
+	digits := IntToDigits(n)
+	sortedDigits := SortIntegerTable(digits)
+	PrintIntTable(ConvertArrIntToInt32(sortedDigits))
 }
 
-func IntToDigits(n int32) []int32 {
-	var digits []int32
+func ConvertArrIntToInt32(arr []int) []int32 {
+	var result []int32
+	for _, n := range arr {
+		result = append(result, int32(n))
+	}
+	return result
+}
+
+func IntToDigits(n int) []int {
+	var digits []int
 	for n > 0 {
 		digit := n % 10
 		n /= 10
@@ -23,7 +31,7 @@ func IntToDigits(n int32) []int32 {
 	return digits
 }
 
-func SortIntegerTableInt32(table []int32) []int32 {
+func SortIntegerTableInt(table []int) []int {
 	for i := 1; i < ArrLen(table); i++ {
 		key := table[i]
 		j := i - 1
@@ -47,21 +55,7 @@ func PrintIntTable(digits []int32) {
 	}
 }
 
-func SortRuneTable(table []rune) []rune {
-	for i := 1; i < ArrLen(table); i++ {
-		key := table[i]
-		j := i - 1
-
-		for j >= 0 && table[j] > key {
-			table[j+1] = table[j]
-			j = j - 1
-		}
-		table[j+1] = key
-	}
-	return table
-}
-
-func ArrLen(runes []int32) int {
+func ArrLen(runes []int) int {
 	count := 0
 	for range runes {
 		count++
