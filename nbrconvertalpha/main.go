@@ -9,6 +9,7 @@ import (
 func main() {
 	var argsStart int
 	if os.Args[1] == "--upper" {
+		z01.PrintRune(' ')
 		argsStart = 2
 	} else {
 		argsStart = 1
