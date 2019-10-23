@@ -7,6 +7,5 @@ import (
 )
 
 func main() {
-	arg1 := 4
-	fmt.Println(piscine.Fibonacci(arg1))
+	fmt.Println(piscine.Capitalize("Hello! How are you? How+are+things+4you?"))
 }
