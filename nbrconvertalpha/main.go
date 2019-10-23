@@ -1,17 +1,14 @@
 package main
 
 import (
-	"flag"
 	"os"
 
 	"github.com/01-edu/z01"
 )
 
 func main() {
-	upperPtr := flag.Bool("-upper", false, "up your letters")
-
 	var argsStart int
-	if *upperPtr {
+	if os.Args[1] == "--upper" {
 		argsStart = 2
 	} else {
 		argsStart = 1
@@ -25,10 +22,10 @@ func main() {
 	for _, s := range os.Args[argsStart:] {
 		nm := atoi(s)
 		if nm < 26 {
-			if *upperPtr {
-				z01.PrintRune(rune(nm + 96 - 31))
-			} else {
+			if os.Args[1] == "--upper" {
 				z01.PrintRune(rune(nm + 96 - 32))
+			} else {
+				z01.PrintRune(rune(nm + 96))
 			}
 		} else {
 			z01.PrintRune(' ')
