@@ -7,25 +7,25 @@ import (
 )
 
 func main() {
-	var argsStart int
+	//var argsStart int
 
 	if stringArrLen(os.Args) <= 1 {
 		z01.PrintRune('\n')
 		return
 	}
 
-	if os.Args[1] == "--upper" {
-		argsStart = 2
-	} else {
-		argsStart = 1
-	}
+	// if os.Args[1] == "--upper" {
+	// 	argsStart = 2
+	// } else {
+	// 	argsStart = 1
+	// }
 
 	//if !isDigits(os.Args[argsStart:]) {
 	//	z01.PrintRune(' ')
 	//	os.Exit(0)
 	//}
 
-	for _, s := range os.Args[argsStart:] {
+	for _, s := range os.Args[1:] {
 		nm := atoi(s)
 		if nm <= 26 && nm > 0 {
 			if os.Args[1] == "--upper" {
