@@ -9,16 +9,15 @@ import (
 func main() {
 	var argsStart int
 	if os.Args[1] == "--upper" {
-		z01.PrintRune(' ')
 		argsStart = 2
 	} else {
 		argsStart = 1
 	}
 
-	if !isDigits(os.Args[argsStart:]) {
-		z01.PrintRune(' ')
-		os.Exit(0)
-	}
+	//if !isDigits(os.Args[argsStart:]) {
+	//	z01.PrintRune(' ')
+	//	os.Exit(0)
+	//}
 
 	for _, s := range os.Args[argsStart:] {
 		nm := atoi(s)
