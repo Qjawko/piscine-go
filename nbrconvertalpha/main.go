@@ -11,7 +11,7 @@ func main() {
 
 	if stringArrLen(os.Args) <= 1 {
 		z01.PrintRune('\n')
-		os.Exit(3)
+		return
 	}
 
 	if os.Args[1] == "--upper" {
