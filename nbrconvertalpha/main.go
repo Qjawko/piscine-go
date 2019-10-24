@@ -27,7 +27,7 @@ func main() {
 
 	for _, s := range os.Args[argsStart:] {
 		nm := atoi(s)
-		if nm < 26 {
+		if nm <= 26 {
 			if os.Args[1] == "--upper" {
 				z01.PrintRune(rune(nm + 96 - 32))
 			} else {
