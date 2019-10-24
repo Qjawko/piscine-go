@@ -8,6 +8,12 @@ import (
 
 func main() {
 	var argsStart int
+
+	if stringArrLen(os.Args) <= 1 {
+		z01.PrintRune('\n')
+		os.Exit(3)
+	}
+
 	if os.Args[1] == "--upper" {
 		argsStart = 2
 	} else {
@@ -32,6 +38,15 @@ func main() {
 		}
 	}
 	z01.PrintRune('\n')
+}
+
+func stringArrLen(strs []string) int {
+	count := 0
+	for range strs {
+		count++
+	}
+
+	return count
 }
 
 func isDigits(strs []string) bool {
