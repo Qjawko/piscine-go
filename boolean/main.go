@@ -9,7 +9,7 @@ import (
 func printStr(str string) {
 	arrayStr := []rune(str)
 
-	for i := 0; i < len(arrayStr); i++ {
+	for i := 0; i < getStrLen(arrayStr); i++ {
 		z01.PrintRune(arrayStr[i])
 	}
 	z01.PrintRune('\n')
@@ -38,6 +38,15 @@ func main() {
 func getLen(args []string) int {
 	count := 0
 	for range args {
+		count++
+	}
+
+	return count
+}
+
+func getStrLen(str []rune) int {
+	count := 0
+	for range str {
 		count++
 	}
 
